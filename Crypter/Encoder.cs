@@ -17,19 +17,7 @@ namespace Enc
                 byte[] encFile = RC4.Encrypt(pass, file);
                 File.WriteAllBytes("./BindShell.dat", encFile);
 
-                /*
-                byte[] file = File.ReadAllBytes("./RShell.dll");
-                byte[] encFile = RC4.Encrypt(pass, file);
-                File.WriteAllBytes("./RShell.dat", encFile);
-
-
-                
-                byte[] file = File.ReadAllBytes("./PayLoad.bin");
-                byte[] decFile = RC4.Decrypt(pass, file);
-                File.WriteAllBytes("./PayLoad_dec.dll", decFile);
-                */
-
-
+               
             }
             catch (Exception) { 
 
