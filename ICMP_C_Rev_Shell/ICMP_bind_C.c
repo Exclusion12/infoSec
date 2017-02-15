@@ -15,7 +15,7 @@
 		-Precompiled Headers: Not using precompiled headers
 		-Runtime library to Multi-threaded/MT (will include the visual c++ runtime in the exe)
 	That should be enough. Generate it
-	Tested on Windows Server 2008 64bit, Windows 10 Home Edition 64 bit
+	Tested on Windows Server 2012 64bit, Windows 10 Home Edition 64 bit
 		
 
 */
